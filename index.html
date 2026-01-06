@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таргетолог Facebook и Instagram</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Основные настройки стиля (по мотивам prosto-mesto.ru) --- */
+        :root {
+            --bg-main: #fdfcf8;       /* Основной очень светлый бежевый фон */
+            --bg-secondary: #f2f0eb;  /* Чуть более темный фон для разделения секций */
+            --text-color: #333333;    /* Мягкий черный цвет текста */
+            --accent-color: #7e9c63;  /* Приглушенный зеленый для кнопок */
+            --accent-hover: #688252;  /* Цвет кнопки при наведении */
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Контейнер для центрирования контента */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Стилизация секций */
+        section {
+            padding: 60px 0;
+        }
+
+        section.alternate-bg {
+            background-color: var(--bg-secondary);
+        }
+
+        h1, h2, h3 {
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 { font-size: 2.2rem; }
+        h2 { font-size: 1.8rem; }
+        h3 { font-size: 1.3rem; text-align: left; margin-top: 2rem;}
+
+        p, li {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+        
+        li {
+             margin-bottom: 0.8rem;
+        }
+
+        /* Стилизация фото (круг и уменьшение) */
+        .profile-img {
+            width: 160px;       /* Задаем фиксированный размер */
+            height: 160px;
+            object-fit: cover;  /* Чтобы фото не сплющилось при обрезке */
+            border-radius: 50%; /* Делаем круг */
+            display: block;
+            margin: 0 auto 30px auto; /* Центрируем и добавляем отступ снизу */
+            border: 3px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Стилизация кнопки WhatsApp */
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--accent-hover);
+        }
+        
+        .center-btn-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Сетка для форматов работы на больших экранах */
+        @media (min-width: 768px) {
+            .formats-grid {
+                display: flex;
+                gap: 30px;
+            }
+            .format-card {
+                flex: 1;
+                background: white;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            }
+            .format-card h3 {
+                margin-top: 0;
+                text-align: center;
+            }
+        }
+        
+        /* Мелкие правки для мобильных */
+        @media (max-width: 767px) {
+             .format-card {
+                background: white;
+                padding: 20px;
+                border-radius: 12px;
+                margin-bottom: 20px;
+                 box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            }
+             .format-card h3 {
+                margin-top: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container" style="text-align: center;">
+            <img src="image_0.png" alt="Виталия - Таргетолог" class="profile-img">
+            
+            <h1>Таргетированная реклама в Facebook и Instagram</h1>
+            <p style="font-size: 1.2rem;">Меня зовут Виталия.<br>
+            Я помогаю бизнесу получать первые заявки и тестировать рекламу в Meta Ads.<br>
+            Работаю с небольшими проектами, экспертами и локальными услугами.</p>
+
+            <div class="center-btn-container">
+                <a href="https://wa.me/77015709523" class="btn-whatsapp" id="heroWaButton">Написать в WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="alternate-bg">
+        <div class="container">
+            <h2>Кому подойдут мои услуги</h2>
+            <ul>
+                <li>вы запускаете таргетированную рекламу впервые</li>
+                <li>вам нужен небольшой тестовый рекламный бюджет</li>
+                <li>важно понимать, куда уходят деньги и какие объявления работают</li>
+                <li>вы хотите рекламу без сложных терминов и непонятных процессов</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Что я делаю как таргетолог</h2>
+            
+            <h3>Анализ и подготовка</h3>
+            <ul>
+                <li>разбор ниши и предложения</li>
+                <li>определение целевой аудитории</li>
+                <li>помощь с формулировкой оффера</li>
+            </ul>
+
+            <h3>Настройка рекламы</h3>
+            <ul>
+                <li>создание и настройка рекламного кабинета Meta</li>
+                <li>запуск рекламы в Facebook и Instagram</li>
+                <li>подбор форматов объявлений</li>
+                <li>настройка аудиторий</li>
+            </ul>
+
+            <h3>Аналитика и контроль (Важно для вашего курса!)</h3>
+            <ul>
+                <li>установка Meta Pixel</li>
+                <li>подключение Google Tag Manager</li>
+                <li>отслеживание кликов и заявок</li>
+                <li>проверка корректности аналитики</li>
+            </ul>
+
+            <h3>Оптимизация</h3>
+            <ul>
+                <li>анализ первых результатов</li>
+                <li>корректировка объявлений</li>
+                <li>отключение неэффективных связок</li>
+                <li>рекомендации по улучшению</li>
+            </ul>
+        </div>
+    </section>
+
+     <section class="alternate-bg">
+        <div class="container">
+            <h2>Что вы получите</h2>
+            <ul>
+                <li>корректно настроенную рекламную кампанию</li>
+                <li>понимание, как работает таргетинг именно в вашем проекте</li>
+                <li>аккуратную и осознанную работу с бюджетом</li>
+                <li>обратную связь и объяснения простым языком</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Как я работаю</h2>
+            <ol>
+                <li>Обсуждаем задачу и цель рекламы</li>
+                <li>Подготавливаем рекламный кабинет и аналитику</li>
+                <li>Запускаем рекламу на тест</li>
+                <li>Анализируем первые результаты</li>
+                <li>Принимаем решение о корректировках или масштабировании</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="alternate-bg">
+        <div class="container">
+            <h2>Форматы работы</h2>
+            <div class="formats-grid">
+                <div class="format-card">
+                    <h3>Быстрый тест вашей ниши</h3>
+                    <p>Подходит для первого знакомства с таргетированной рекламой.</p>
+                    <ul>
+                        <li>настройка рекламы</li>
+                        <li>запуск 1–2 объявлений</li>
+                        <li>установка аналитики</li>
+                    </ul>
+                </div>
+                <div class="format-card">
+                    <h3>Сопровождение</h3>
+                     <p>Для тех, кому нужна постоянная поддержка.</p>
+                    <ul>
+                        <li>регулярный анализ кампаний</li>
+                        <li>оптимизация рекламы</li>
+                        <li>отчеты и рекомендации</li>
+                    </ul>
+                </div>
+            </div>
+             <p style="text-align: center; margin-top: 30px;">Стоимость обсуждается индивидуально.</p>
+        </div>
+    </section>
+
+    <section style="text-align: center; padding-bottom: 80px;">
+        <div class="container">
+            <h2>Начнем работу?</h2>
+            <p>Напишите мне в WhatsApp — обсудим ваш проект и задачи.</p>
+             <div class="center-btn-container">
+                 <a href="https://wa.me/77015709523" class="btn-whatsapp" id="footerWaButton">Написать в WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
